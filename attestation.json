@@ -1,0 +1,9 @@
+{
+  "pluginId": "neobase.cartes",
+  "repo": "NDesumeur/neobase-plugin-cartes",
+  "version": "1.2.0",
+  "sha256": "cdc6ea27121485e24c16971f010c9fc3b979498b388080d522e47ef27391f1d4",
+  "approvedAt": "2026-11-01T13:30:30.028Z",
+  "neobase": ">=4.1.0",
+  "signature": "sq9NerRx0B0tsKtGBO1hMvG/Uq2yNRoeR2qpPjx9aDuZGXDbe/7ke928yE3wpk2UHP040Jm2N1b0+c8BbwOhDw=="
+}
