@@ -72,7 +72,7 @@ const PACKS = [
   { id: 'elem', name: 'Pack élémentaire', cost: 300, n: 5, col: '#ff8a5c', sm: '5 cartes d\'un seul type, au choix.', elem: true },
 ];
 const SELL_FACTOR = 0.4, PITY_AT = 20;
-const MILESTONES = [[10, 100], [25, 200], [50, 400], [100, 900], [150, 1300], [200, 1800], [300, 3000], [400, 4500], [523, 10000]];
+const MILESTONES = [[10, 100], [25, 200], [50, 400], [100, 900], [150, 1300], [200, 1800], [300, 3000], [400, 4500], [700, 6000], [1050, 15000]];
 const dayKey = d => { const x = d || new Date(); return x.getFullYear() + '-' + String(x.getMonth() + 1).padStart(2, '0') + '-' + String(x.getDate()).padStart(2, '0'); };
 const randInt = n => { const a = new Uint32Array(1); const lim = 4294967296 - (4294967296 % n); let x; do { crypto.getRandomValues(a); x = a[0]; } while (x >= lim); return x % n; };   // unbiased, no modulo skew
 const randF = () => { const a = new Uint32Array(1); crypto.getRandomValues(a); return a[0] / 4294967296; };
