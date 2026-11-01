@@ -200,7 +200,7 @@ export default async function (ctx) {
     main.append(sum, stage);
   };
   /* ---------- collection ---------- */
-  const sortFns = { num: (a, b) => a.id.localeCompare(b.id), nom: (a, b) => a.n.localeCompare(b.n, 'fr'), rar: (a, b) => CR.RK[b.r] - CR.RK[a.r] || a.id.localeCompare(b.id), pui: (a, b) => CR.total(b) - CR.total(a), qte: (a, b) => (doc.col[b.id] || 0) - (doc.col[a.id] || 0) };
+  const sortFns = { num: (a, b) => (a.id.slice(3) - b.id.slice(3)), nom: (a, b) => a.n.localeCompare(b.n, 'fr'), rar: (a, b) => CR.RK[b.r] - CR.RK[a.r] || (a.id.slice(3) - b.id.slice(3)), pui: (a, b) => CR.total(b) - CR.total(a), qte: (a, b) => (doc.col[b.id] || 0) - (doc.col[a.id] || 0) };
   const renderCol = () => {
     main.innerHTML = ''; const bar = CRUI.el('div', 'cd-top'); bar.style.marginBottom = '6px';
     const q = CRUI.el('input', 'cb-in'); q.placeholder = 'Chercher…'; q.value = S.q; q.oninput = () => { S.q = q.value.toLowerCase(); grid(); };
