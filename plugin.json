@@ -1,0 +1,19 @@
+{
+  "id": "neobase.cartes",
+  "name": "Cartes",
+  "version": "1.0.0",
+  "author": "NDesumeur",
+  "description": "Un jeu de cartes à collectionner : un paquet gratuit par jour, six raretés, doublons à revendre, boutique de paquets, collection et historique d'ouvertures.",
+  "icon": "icon.png",
+  "entry": "index.js",
+  "view": "cartes",
+  "neobase": ">=4.1.0",
+  "type": "app",
+  "category": "Jeux",
+  "mobile": false,
+  "system": false,
+  "dependencies": {},
+  "permissions": [
+    "full"
+  ]
+}
