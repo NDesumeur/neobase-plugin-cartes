@@ -25,7 +25,7 @@ const CSS = `
 .cd-card .hd small{font-size:.75em;color:var(--rc);flex:none;font-family:var(--title,monospace)}
 .cd-card .im{flex:1;margin:5px 0;display:grid;place-items:center;position:relative;overflow:hidden;background:radial-gradient(ellipse at 50% 85%,color-mix(in srgb,var(--c) 55%,transparent),transparent 70%),repeating-linear-gradient(0deg,#120a2c 0 3px,#171040 3px 6px);box-shadow:inset 0 0 0 2px color-mix(in srgb,var(--rc) 60%,#000)}
 .cd-card .im canvas,.cd-card .im img{width:80%;height:auto;image-rendering:pixelated}
-.cd-card .tp{display:flex;gap:3px;margin-bottom:4px}
+.cd-card .tp{display:flex;flex-wrap:wrap;gap:3px;margin-bottom:4px;overflow:hidden}
 .cd-card .st{display:grid;grid-template-columns:repeat(5,1fr);gap:2px;font-size:.78em;text-align:center}
 .cd-card .st span{background:#0a0418;padding:2px 0;box-shadow:inset 0 0 0 1px #3a2a6e}
 .cd-card .st em{display:block;font-style:normal;color:var(--cb-sub);font-size:.8em}
